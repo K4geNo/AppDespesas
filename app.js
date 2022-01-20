@@ -10,7 +10,7 @@ class Despesa {
 
     validarDados() {
         for(let i in this) {
-            if(this[i] == undefined || this[i] == '' || this[i] == null) {
+            if(!this[i]) {
                 return false
             }
         }
